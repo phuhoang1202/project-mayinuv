@@ -1,0 +1,97 @@
+/* Xóa pseudo-element ::before của phần Tabs */
+.custom-tabs .ant-tabs-nav::before {
+  content: none !important;
+}
+
+/* Ẩn phần ink-bar (đường gạch chân của tab khi active) */
+.custom-tabs .ant-tabs-ink-bar {
+  display: none !important;
+}
+
+.custom-tabs .ant-tabs-tab {
+  margin: 0 !important; /* Loại bỏ margin mặc định */
+}
+
+.custom-tabs .ant-tabs-tab:hover {
+  color: #282828; /* Màu chữ khi hover */
+}
+
+/* css của title tabs */
+.custom-tabs .ant-tabs-tab {
+  width: 200px;
+  height: 44px;
+  padding: 6px 14px;
+  gap: 0px;
+  border-radius: 0;
+  border-width: 0;
+  border-style: solid;
+}
+
+/* Khi tab được active */
+.custom-tabs .ant-tabs-tab-active {
+  background-color: #faf4ea;
+  color: #282828;
+  border-bottom-width: 2px;
+  border-bottom-color: #d1b584;
+}
+
+.custom-tabs .ant-tabs-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-tabs .ant-tabs-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-tabs .ant-tabs-tab .anticon {
+  margin-right: 8px; /* Khoảng cách giữa icon và text  */
+}
+
+.custom-tabs .ant-tabs-content {
+  padding-top: 12px; /* Điều chỉnh khoảng cách giữa tiêu đề tab và nội dung */
+}
+
+.custom-select .ant-select-selector {
+  outline: none !important; /* Xóa outline */
+  box-shadow: none !important; /* Xóa hiệu ứng đổ bóng */
+}
+
+.custom-select .ant-select-selector:focus {
+  border: none !important; /* Xóa border khi focus */
+}
+
+.custom-select .ant-select-selection-item {
+  font-weight: 700; /* Đặt font chữ bold cho giá trị đã chọn */
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.custom-select .ant-select-selector {
+  background-color: #f8f8f8 !important;
+  height: 44px !important;
+  border: 1px solid !important;
+  border: #efefef !important;
+}
+
+.custom-select .ant-select-arrow {
+  margin-top: 0 !important;
+}
+
+.selectAttribute .ant-select-selector {
+  border: none !important; /* Xóa border */
+  box-shadow: none !important; /* Xóa hiệu ứng đổ bóng nếu có */
+  outline: none !important; /* Xóa outline nếu có */
+  padding: 0 !important;
+}
+
+.custom-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.custom-input {
+  box-shadow: none !important;
+}

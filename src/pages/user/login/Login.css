@@ -1,0 +1,13 @@
+.btn-google {
+    width: 100%; /* Độ rộng của button */
+    max-width: 250px; /* Độ rộng tối đa */
+    margin: 0 auto; /* Căn giữa */
+  }
+  
+  .btn-google .button-google {
+    width: 100%; /* Độ rộng của button */
+    height: 60px; /* Chiều cao của button */
+    font-size: 16px; /* Kích thước chữ */
+    /* Các thuộc tính CSS khác cần thiết */
+  }
+  

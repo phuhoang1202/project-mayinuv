@@ -1,0 +1,9 @@
+const config = {
+  API_URL: process.env.REACT_APP_API_URL,
+  DEFAULT_LANGUAGE: process.env.REACT_APP_DEFAULT_LANGUAGE,
+  LOGIN_CLIENTID: process.env.REACT_APP_CLIENTID,
+  LOGIN_CLIENTSECRET: process.env.REACT_APP_CLIENTSECRET,
+  GOOGLE_CLIENT_ID: process.env.REACT_APP_GOOGLE_CLIENT_ID
+};
+
+export default config;

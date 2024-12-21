@@ -1,0 +1,11 @@
+auto build
+
+git checkout phucTD
+git pull
+git checkout develop
+git merge develop
+git add .
+git commit -m "phucTD"
+git push
+
+npm run build

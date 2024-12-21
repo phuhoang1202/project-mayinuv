@@ -1,0 +1,21 @@
+.custom-pagination .ant-pagination-item-active {
+  background-color: #000; /* Màu nền đen */
+  border-radius: 50%; /* Làm cho nút thành hình tròn */
+  border: none; /* Loại bỏ đường viền */
+}
+
+.custom-pagination .ant-pagination-item-active a {
+  color: white; /* Màu chữ trắng */
+}
+
+.custom-pagination .ant-pagination-item {
+  border-radius: 50%; /* Làm các nút pagination tròn */
+}
+
+.custom-pagination .ant-pagination-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}

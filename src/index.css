@@ -1,0 +1,435 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+  .socialIcon {
+    @apply w-11 border-[1px] border-blue-400 border-solid h-11 rounded-full px-2 py-1 text-pink-500  hover:text-blue-400 cursor-pointer transition duration-200 hover:animate-pulse;
+  }
+} */
+
+/* @font-face {
+  font-family: 'Regular';
+  src: url('/src/assets/fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Medium';
+  src: url('/src/assets/fonts/Nunito-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('/src/assets/fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+html {
+} */
+
+body {
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif !important;
+}
+
+.font-nunito {
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif !important;
+}
+
+.text-korean {
+  font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+.react-calendar {
+  border: unset;
+  background-color: transparent;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif !important;
+}
+.react-calendar__navigation__prev2-button {
+  display: none;
+}
+.react-calendar__navigation__next2-button {
+  display: none;
+}
+.react-calendar__navigation {
+  align-items: center;
+}
+abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: unset;
+  text-decoration: unset;
+  -webkit-text-decoration: unset;
+  -webkit-text-decoration: unset;
+  text-decoration: unset !important;
+}
+.react-calendar__navigation__prev-button {
+  background-color: #4318ff !important;
+  border-radius: 10px;
+  min-width: 34px !important;
+  height: 34px !important;
+  color: white;
+}
+.react-calendar__navigation__next-button {
+  background-color: #4318ff !important;
+  border-radius: 10px;
+  min-width: 34px !important;
+  width: 34px !important;
+  height: 34px !important;
+  color: white;
+}
+.react-calendar__navigation__label {
+  font-weight: 700 !important;
+  font-size: 18px;
+}
+.react-calendar__navigation__label:hover,
+.react-calendar__navigation__label:focus {
+  background-color: unset !important;
+  border-radius: 10px;
+}
+.react-calendar__tile {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px !important;
+  height: 34px !important;
+  color: #1b2559;
+}
+.react-calendar__month-view__weekdays {
+  background-color: #f4f7fe;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+.react-calendar__tile--now,
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background-color: #f4f7fe;
+  border-radius: 10px;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #b0bbd5;
+}
+.react-calendar__tile--active,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #4318ff;
+  border-radius: 10px;
+  color: white;
+}
+.react-calendar__tile--range,
+.react-calendar__tile--range:enabled:hover,
+.react-calendar__tile--range:enabled:focus {
+  background: #f4f7fe;
+  color: #4318ff;
+  border-radius: 0px;
+}
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeStart:enabled:hover,
+.react-calendar__tile--rangeStart:enabled:focus {
+  background: #4318ff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+}
+.react-calendar__tile--rangeEnd,
+.react-calendar__tile--rangeEnd:enabled:hover,
+.react-calendar__tile--rangeEnd:enabled:focus {
+  background: #4318ff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+
+/* DARK MODE */
+
+body.dark .react-calendar {
+  border-radius: 30px;
+}
+body.dark .react-calendar__navigation__prev-button {
+  background-color: #7551ff !important;
+}
+body.dark .react-calendar__navigation__next-button {
+  background-color: #7551ff !important;
+  color: white;
+}
+body.dark .react-calendar__tile {
+  color: white;
+}
+body.dark .react-calendar__tile:enabled:hover,
+body.dark .react-calendar__tile:enabled:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body.dark .react-calendar__month-view__weekdays {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body.dark .react-calendar__tile--now,
+body.dark .react-calendar__tile--now:enabled:hover,
+body.dark .react-calendar__tile--now:enabled:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body.dark .react-calendar__month-view__days__day--neighboringMonth {
+  color: #b0bbd5;
+}
+body.dark .react-calendar__tile--active,
+body.dark .react-calendar__tile--active:enabled:hover,
+body.dark .react-calendar__tile--active:enabled:focus {
+  background: #7551ff;
+  color: white;
+}
+body.dark .react-calendar__tile--range,
+body.dark .react-calendar__tile--range:enabled:hover,
+body.dark .react-calendar__tile--range:enabled:focus {
+  background: rgba(255, 255, 255, 0.1);
+  color: #7551ff;
+}
+body.dark .react-calendar__tile--rangeStart,
+body.dark .react-calendar__tile--rangeStart:enabled:hover,
+body.dark .react-calendar__tile--rangeStart:enabled:focus {
+  background: #7551ff;
+  color: white;
+}
+body.dark .react-calendar__tile--rangeEnd,
+body.dark .react-calendar__tile--rangeEnd:enabled:hover,
+body.dark .react-calendar__tile--rangeEnd:enabled:focus {
+  background: #7551ff;
+  color: white;
+}
+
+/* body.dark .ant-table-thead .ant-table-cell {
+  background-color: #161D41;
+  color: white;
+  border: 1px solid white;
+} */
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin: 0 5px;
+  text-align: center;
+  overflow: hidden;
+  height: 400px;
+}
+
+.carousel-item.center {
+  height: 400px;
+  width: 100%;
+}
+
+.carousel-item:not(.center) {
+  width: 40px;
+  opacity: 0.7;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #007bff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.prev {
+  left: -20px;
+}
+
+.next {
+  right: -20px;
+}
+
+@media (max-width: 768px) {
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+}
+
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slick-slide {
+  position: relative;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Custom arrow styling */
+.slick-prev,
+.slick-next {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.carousel-button img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Custom dots styling */
+.slick-dots li button:before {
+  color: #f5c102;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.area-border {
+  border: 0px !important;
+}
+.hover-button-qa:hover {
+  color: white !important;
+  border: none !important;
+  width: '80px' !important;
+}
+.row-unseen {
+  background-color: #f8f8f8 !important;
+}
+.ant-popconfirm-buttons {
+  display: flex !important;
+  justify-content: center !important;
+}
+.ant-popover-inner {
+  width: 409px !important;
+  padding: 30px !important;
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-tabs .ant-tabs-ink-bar {
+  position: absolute;
+  background: #3b3b3b;
+  pointer-events: none;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch.ant-switch-checked {
+  background: #b5955e !important;
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background: #b5955e !important;
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch:hover:not(.ant-switch-disabled) {
+  background: rgba(0, 0, 0, 0.45) !important;
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-table-wrapper .ant-table-cell,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-table-wrapper .ant-table-thead > tr > th,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-table-wrapper .ant-table-tbody > tr > th,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-table-wrapper .ant-table-tbody > tr > td,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-table-wrapper tfoot > tr > th,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-table-wrapper tfoot > tr > td {
+  padding: 16px 10px;
+  overflow-wrap: break-word;
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-otp .ant-otp-input {
+  text-align: center;
+  padding-inline: 4px;
+  height: 44px;
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-dropdown,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-dropdown-menu-submenu {
+  width: 200px;
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-dropdown .ant-dropdown-menu,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-dropdown-menu-submenu .ant-dropdown-menu {
+  padding: 28px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* :where(.css-dev-only-do-not-override-qnu6hi).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-item {
+  border-bottom: 1px solid black;
+} */
+
+/* .ant-dropdown-menu-title-content {
+  border-bottom: 1px solid black;
+} */
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+@media (max-width: 375px) {
+  .img-product {
+    width: 160px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-placeholder::placeholder {
+    visibility: hidden;
+  }
+}
+
+.custom-table .ant-table-thead > tr > th {
+  text-align: center;
+}
